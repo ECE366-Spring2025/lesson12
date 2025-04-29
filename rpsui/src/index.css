@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black; /* Set background color to black */
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Set text color to white */
+  font-size: 24px;
+  padding: 10px;
+  border: 2px solid aqua; /* Add aqua blue border */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+nav a:hover {
+  color: #cccccc; /* Set hover color to a lighter shade of white */
+}

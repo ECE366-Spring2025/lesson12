@@ -1,0 +1,12 @@
+INSERT INTO player (user_name, password) VALUES ('Grace', 'password');
+INSERT INTO player (user_name, password) VALUES ('Andrew', 'password');
+INSERT INTO player (user_name, password) VALUES ('David', 'password');
+INSERT INTO player (user_name, password) VALUES ('Isaac', 'password');
+INSERT INTO player (user_name, password) VALUES ('Ant', 'password');
+INSERT INTO game (p1_id, p2_id, p1_score, p2_score, total_rounds, current_round, winner_id) VALUES (1, 2, 2, 1, 3, 3, 1);
+INSERT INTO game_round (game_id, round_number, p1_choice, p2_choice) VALUES (1, 1, 'Scissors', 'Paper');
+INSERT INTO game_round (game_id, round_number, p1_choice, p2_choice) VALUES (1, 2, 'Scissors', 'Paper');
+INSERT INTO game_round (game_id, round_number, p1_choice, p2_choice) VALUES (1, 3, 'Scissors', 'Rock');
+INSERT INTO game (p1_id, p2_id, p1_score, p2_score, total_rounds, current_round) VALUES (1, 3, 1, 1, 3, 2);
+INSERT INTO game_round (game_id, round_number, p1_choice, p2_choice) VALUES (2, 1, 'Scissors', 'Paper');
+INSERT INTO game_round (game_id, round_number, p1_choice, p2_choice) VALUES (2, 2, 'Scissors', 'Rock');

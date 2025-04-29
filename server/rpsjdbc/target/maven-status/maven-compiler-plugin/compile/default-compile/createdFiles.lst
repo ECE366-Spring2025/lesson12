@@ -1,0 +1,7 @@
+ece366/rpsjdbc/Player.class
+ece366/rpsjdbc/PlayerDAO.class
+ece366/rpsjdbc/RpsjdbcApplication.class
+ece366/rpsjdbc/DatabaseConnectionManager.class
+ece366/rpsjdbc/util/DataAccessObject.class
+ece366/rpsjdbc/util/DataTransferObject.class
+ece366/rpsjdbc/webservice/WebserviceController.class

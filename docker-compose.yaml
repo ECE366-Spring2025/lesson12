@@ -1,0 +1,27 @@
+services:
+  db:
+    image: ece366acr.azurecr.io/rpsdb:latest
+    build: db
+    environment:
+    - POSTGRES_DB=postgres
+    - POSTGRES_PASSWORD=password
+    ports:
+    - 5432:5432
+    restart: always
+  app:
+    image: ece366acr.azurecr.io/rpsapp:latest
+    build: server/rpsjdbc
+    environment:
+    - POSTGRES_DB=postgres
+    - POSTGRES_PASSWORD=password
+    depends_on:
+    - db
+    ports:
+    - 8080:8080
+  ui:
+    image: ece366acr.azurecr.io/rpsui:latest
+    build: rpsui
+    depends_on:
+    - app
+    ports:
+    - 80:80

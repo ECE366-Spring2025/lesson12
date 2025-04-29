@@ -1,0 +1,8 @@
+FROM postgres
+
+# Copy the SQL files to the container
+COPY setup.sql /docker-entrypoint-initdb.d/0_setup.sql
+COPY player.sql /home/1_player.sql
+COPY game.sql /home/2_game.sql
+COPY game_round.sql /home/3_game_round.sql
+COPY sample_records.sql /home/4_sample_records.sql
